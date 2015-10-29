@@ -79,6 +79,20 @@ class Rover
   end
 end
 
+class Plateau
+	def initialize(x_size, y_size)
+		@x_size = x_size
+		@y_size = y_size
+	end
+
+	def print
+		puts "The plateau is #{@x_size} by #{@y_size}"
+	end
+end
+
+plateau1 = Plateau.new(5, 5)
+plateau1.print
+
 rover1 = Rover.new(9, 9, "N", "Rover 1")
 rover2 = Rover.new(2, 7, "E", "Rover 2")
 
